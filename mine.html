@@ -1,0 +1,611 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小米商城</title>
+<link rel="stylesheet" type="text/css" href="css/mine.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<style>
+<!--
+		.swiper-container{
+
+	margin: 0 auto;
+	width: 1226px;
+	height: 460px;
+	position: absolute;
+}-->
+.swiper-container{
+
+width: 100%;
+
+height: 200px;
+
+}
+
+.swiper-slide{
+
+    width: 100%;
+
+    height: 150px;
+
+}
+
+.swiper-slide img{
+
+    width: 100%;
+
+    height: 100%;
+
+}  
+</style> 
+</head>
+
+<body>
+
+<div>
+<!--导航栏-->
+<div class="site-topbar">
+  <div class="Container"> 
+    <div class="topbar-nav">
+      <div > 
+      	<a  href=＂javascript:void(0)”>小米商城</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>MIUI</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>LOT</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>云服务</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>金融</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>小品</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>小爱开发平台</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>政企服务</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>企业团购</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>政企资照</a> <span class="span">|</span> 
+        <a  href=＂javascript:void(0)”>下载app</a> <span class="span">|</span> 
+        <a href=＂javascript:void(0)”>SelectRegion</a> 
+       </div>
+    </div>
+    <div class="topbar-info" id="j_userInfo">
+      <div style="float: right"> 
+      <a href=＂javascript:void(0)” >登录</a> <span class="span">|</span> 
+      <a href=＂javascript:void(0)”>注册</a> <span class="span">|</span> 
+      <a href=＂javascript:void(0)”>消息通知</a>
+       	<div class="shoppingcart"> 
+        	<img src="img/sider-shopcar.png" class="shoppingcartIcon"> <span>购物车(0)</span>
+          	<div class="topbar-cart-menu">
+            	<div class="topbar-cart-txt"> <span>购物车中还没有商品，赶紧选购吧！</span> </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearBoth"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="site-header">
+    <div class="header-logo"><img src="img/mi-logo.png" class="MIIcon"></div>
+   	<div class="header-nav">
+        	<ul class="nav-list">
+        		<li class="nav-item"> 
+        			<a class="link" herf="javascript:void(0)"> 
+                    	<span class="redmi">小米手机
+                			
+                         </span>
+                    </a> 
+            	</li>
+        		<li class="nav-item"> 
+        			<a class="link1" herf="javascript:void(0)"> 
+                    	Redmi红米
+                    </a>
+                    
+            	</li>
+        		<li class="nav-item"> 
+        			<a class="link" herf="javascript:void(0)"> 
+                    	<span class="redmi">电视
+                			<div class="header-nav-menu" ></div>
+                         </span>
+                    </a> 
+            	</li>
+        		<li class="nav-item"> 
+        			<a class="link" herf="javascript:void(0)"> 
+                    	<span class="redmi">笔记本
+                			<div class="header-nav-menu" ></div>
+                         </span>
+                    </a> 
+            	</li>
+        		<li class="nav-item"> 
+        			<a class="link" herf="javascript:void(0)"> 
+                    	<span class="redmi">家电
+                			<div class="header-nav-menu" ></div>
+                         </span>
+                    </a> 
+            	</li>
+        		<li class="nav-item"> 
+        			<a class="link" herf="javascript:void(0)"> 
+                    	<span class="redmi">路由器
+                			<div class="header-nav-menu" ></div>
+                         </span>
+                    </a> 
+            	</li>
+        		<li class="nav-item"> 
+        			<a class="link" herf="javascript:void(0)"> 
+                    	<span class="redmi">智能硬件
+                			<div class="header-nav-menu" ></div>
+                         </span>
+                    </a> 
+            	</li>
+        		<li class="nav-item"> 
+        			<a class="link" herf="javascript:void(0)"> 
+                    	<span class="redmi">服务
+                			<div class="header-nav-menu" ></div>
+                         </span>
+                    </a> 
+            	</li>
+                <li class="nav-item"> 
+        			<a class="link" herf="javascript:void(0)"> 
+                    	<span class="redmi">社区
+                			<div class="header-nav-menu" ></div>
+                         </span>
+                    </a> 
+            	</li>
+      		</ul>
+       </div>
+       <div class="header-search">
+       		 <form action="">
+                    <input type="text" class="SearchBox" >
+                     <div class="hotword">
+                    	<a href="">小米8</a>
+                    	<a href="">小米MIX 2s</a>
+                	</div>
+                 	<ul class="search_info">
+                        <li>
+                            <a href="">
+                                <span class="leftfix">小米MIX 2S</span>
+                                <span class="rightfix">约6个结果</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="leftfix">黑鲨游戏机</span>
+                                <span class="rightfix">约12个结果</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="leftfix">小米电视4C</span>
+                                <span class="rightfix">约12个结果</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="leftfix">红米Note5</span>
+                                <span class="rightfix">约18个结果</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="leftfix">净水器</span>
+                                <span class="rightfix">约17个结果</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="leftfix">空气净化器</span>
+                                <span class="rightfix">约31个结果</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="leftfix">笔记本pro</span>
+                                <span class="rightfix">约27个结果</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="leftfix">电视32英寸</span>
+                                <span class="rightfix">约44个结果</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="submit" class="SearchBtn">
+                    	<span id="magnifying-glass"></span>
+                     </button>
+                </form>
+        </div>
+</div>
+
+ <div class="Container lunbo">
+
+        <!--  中央轮播大图   -->
+        <script src="js/swiper.min.js"></script>
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/play04.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/play03.jpg" alt=""> </div>
+        <div class="swiper-slide"><img src="img/play02.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/play01.jpg" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+   <!-- <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>-->
+</div>
+<script type="text/javascript">
+    window.onload = function() {     
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+	 // 自动播放时间
+        autoplay:1000,
+
+        // 播放的速度
+        speed:2000,
+		
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+	　　　// 这样，即使我们滑动之后， 定时器也不会被清除
+　　　　  autoplayDisableOnInteraction : false,
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+  }) 
+	}       
+  </script>
+
+
+        <!--<div id="play" class="play">
+
+            <ul class="imgList">
+
+                <li class="current">
+
+                    <a href=""><img src="img/play04.jpg" alt=""></a>
+
+                </li>
+
+                <li>
+
+                    <a href=""><img src="img/play02.jpg" alt=""></a>
+
+                </li>
+
+                <li>
+
+                    <a href=""><img src="img/play01.jpg" alt=""></a>
+
+                </li>
+
+                <li>
+
+                    <a href=""><img src="img/play04.jpg" alt=""></a>
+
+                </li>
+
+                <li>
+
+                    <a href=""><img src="img/play05.jpg" alt=""></a>
+
+                </li>
+
+            </ul>
+-->
+            <!-- 图片循环下方圆点按钮 -->
+
+            <div class="play-list">
+
+                <span class="current">1</span>
+
+                <span>2</span>
+
+                <span>3</span>
+
+                <span>4</span>
+
+                <span>5</span>
+
+            </div>
+
+            <!-- 图片循环左右方向按钮 -->
+
+            <div class="slide-list">
+
+                <span class="slide slide-left">&lt;</span>
+
+                <span class="slide slide-right">&gt;</span>
+
+            </div>
+
+        </div>
+ 
+        <!-- 左侧菜单列表 -->
+
+        <div class="site-category">
+
+            <ul>
+
+                <li class="category-item">
+
+                    <span class="site-category-list">手机 电话卡</span>
+
+                    <span class="gtIcon">&gt;</span>
+                
+                
+                	<div class="phone">1</div>
+                 </li>
+                   
+
+                <li class="category-item">
+
+                    <span class="site-category-list">电视 盒子</span>
+
+                    <span class="gtIcon">&gt;</span>
+					<div class="phone">1</div>
+                </li>
+
+                <li class="category-item">
+
+                    <span class="site-category-list">笔记本 平板</span>
+
+                    <span class="gtIcon">&gt;</span>
+					<div class="phone">1</div>
+                </li>
+
+                <li class="category-item">
+
+                    <span class="site-category-list">家电 插线板</span>
+
+                    <span class="gtIcon">&gt;</span>
+					<div class="phone">1</div>
+                </li>
+
+                <li class="category-item">
+
+                    <span class="site-category-list">出行 穿戴</span>
+
+                    <span class="gtIcon">&gt;</span>
+					<div class="phone">1</div>
+                </li>
+
+                <li class="category-item">
+
+                    <span class="site-category-list">智能 路由器</span>
+
+                    <span class="gtIcon">&gt;</span>
+					<div class="phone">1</div>
+                </li>
+
+                <li class="category-item">
+
+                    <span class="site-category-list">电源 配件</span>
+
+                    <span class="gtIcon">&gt;</span>
+
+					<div class="phone">1</div>
+                </li>
+
+                <li class="category-item">
+
+                    <span class="site-category-list">个护 儿童</span>
+
+                    <span class="gtIcon">&gt;</span>
+					<div class="phone">1</div>
+                </li>
+
+                <li class="category-item">
+
+                    <span class="site-category-list">耳机 音箱</span>
+
+                    <span class="gtIcon">&gt;</span>
+					<div class="phone">1</div>
+                </li>
+
+                <li class="category-item">
+
+                    <span class="site-category-list">生活 箱包</span>
+
+                    <span class="gtIcon">&gt;</span>
+					<div class="phone">1</div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="clearBoth"></div>
+
+    </div>
+    
+</div>
+ 
+<div class="home-service-list">
+	<div class="div1">
+    	<ul class="list">
+        	<li><a href=""> 选购手机</a></li>
+            <li><a href=""> 选购手机</a></li>
+            <li><a href=""> 选购手机</a></li>
+            <li><a href=""> 选购手机</a></li>
+            <li><a href=""> 选购手机</a></li>
+            <li><a href=""> 选购手机</a></li>
+        </ul>
+    </div>
+    <div class="div2">
+    		<img src="img/Redminote7.jpg" alt="">
+        	<img src="img/Redminote7.jpg" alt="">
+        	<img src="img/Redminote7.jpg" alt="">
+   		</ul>
+    </div>
+</div>
+<div class="home-display">
+	<img src="img/display.jpg" alt="">
+</div>
+<div class="home-display">
+	<img src="img/display.jpg" alt="">
+</div>
+<div class="home-phone">
+	<h2 class="title">手机</h2>
+    <div class="more">
+    	<a herf="">查看全部</a>
+    </div>
+    <div class="left">
+    	<img src="img/小米9.jpg" alt="">
+    </div>
+    <div class="right">
+    	<ul>
+        	<li class="brick-item">
+            	<div class="zhekou xinpin">新品</div>
+
+                        <div class="goodsPic"><a href=""><img src="img/phone.jpg" alt=""></a></div>
+
+                        <div class="goodsname">小米电视4A 55英寸</div>
+
+                        <div class="goodsinfo">4K HDR,64位处理器</div>
+
+                        <div class="goodsprice">
+
+                            <span class="span1">1399元</span>
+
+                            <span class="span2"><del>699元</del></span>
+
+                        </div>
+            </li>
+            <li class="brick-item">
+             <div class="zhekou xinpin">新品</div>
+
+                        <div class="goodsPic"><a href=""><img src="img/phone.jpg" alt=""></a></div>
+
+                        <div class="goodsname">小米电视4A 55英寸</div>
+
+                        <div class="goodsinfo">4K HDR,64位处理器</div>
+
+                        <div class="goodsprice">
+
+                            <span class="span1">1399元</span>
+
+                            <span class="span2"><del>699元</del></span>
+
+                        </div>
+            </li>
+            <li class="brick-item">
+            <div class="zhekou xinpin">新品</div>
+
+                        <div class="goodsPic"><a href=""><img src="img/phone.jpg" alt=""></a></div>
+
+                        <div class="goodsname">小米电视4A 55英寸</div>
+
+                        <div class="goodsinfo">4K HDR,64位处理器</div>
+
+                        <div class="goodsprice">
+
+                            <span class="span1">1399元</span>
+
+                            <span class="span2"><del>699元</del></span>
+
+                        </div>
+            </li>
+            <li class="brick-item">
+            <div class="zhekou xinpin">新品</div>
+
+                        <div class="goodsPic"><a href=""><img src="img/phone.jpg" alt=""></a></div>
+
+                        <div class="goodsname">小米电视4A 55英寸</div>
+
+                        <div class="goodsinfo">4K HDR,64位处理器</div>
+
+                        <div class="goodsprice">
+
+                            <span class="span1">1399元</span>
+
+                            <span class="span2"><del>699元</del></span>
+
+                        </div>
+            </li>
+            <li class="brick-item">
+            <div class="zhekou xinpin">新品</div>
+
+                        <div class="goodsPic"><a href=""><img src="img/phone.jpg" alt=""></a></div>
+
+                        <div class="goodsname">小米电视4A 55英寸</div>
+
+                        <div class="goodsinfo">4K HDR,64位处理器</div>
+
+                        <div class="goodsprice">
+
+                            <span class="span1">1399元</span>
+
+                            <span class="span2"><del>699元</del></span>
+
+                        </div>
+            </li>
+            <li class="brick-item">
+            <div class="zhekou xinpin">新品</div>
+
+                        <div class="goodsPic"><a href=""><img src="img/phone.jpg" alt=""></a></div>
+
+                        <div class="goodsname">小米电视4A 55英寸</div>
+
+                        <div class="goodsinfo">4K HDR,64位处理器</div>
+
+                        <div class="goodsprice">
+
+                            <span class="span1">1399元</span>
+
+                            <span class="span2"><del>699元</del></span>
+
+                        </div>
+            </li>
+            <li class="brick-item">
+            <div class="zhekou xinpin">新品</div>
+
+                        <div class="goodsPic"><a href=""><img src="img/phone.jpg" alt=""></a></div>
+
+                        <div class="goodsname">小米电视4A 55英寸</div>
+
+                        <div class="goodsinfo">4K HDR,64位处理器</div>
+
+                        <div class="goodsprice">
+
+                            <span class="span1">1399元</span>
+
+                            <span class="span2"><del>699元</del></span>
+
+                        </div>
+            </li>
+            <li class="brick-item">
+            <div class="zhekou xinpin">新品</div>
+
+                        <div class="goodsPic"><a href=""><img src="img/phone.jpg" alt=""></a></div>
+
+                        <div class="goodsname">小米电视4A 55英寸</div>
+
+                        <div class="goodsinfo">4K HDR,64位处理器</div>
+
+                        <div class="goodsprice">
+
+                            <span class="span1">1399元</span>
+
+                            <span class="span2"><del>699元</del></span>
+
+                        </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="ad1">
+
+        <a href=""><img src="img/ad1.jpg" alt="小米8 干推"></a>
+
+</div>
+</div>
+</body>
+</html>       
